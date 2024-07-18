@@ -483,7 +483,7 @@ wdm.koaWrapper = koaWrapper;
  * @template {ServerResponse} [ResponseInternal=ServerResponse]
  * @param {Compiler | MultiCompiler} compiler
  * @param {Options<RequestInternal, ResponseInternal>} [options]
- * @returns {(ctx: any, next: Function) => Promise<void> | void}
+ * @returns {(ctx: any, next: Function) => Promise<void>}
  */
 function honoWrapper(compiler, options) {
   const devMiddleware = wdm(compiler, options);
